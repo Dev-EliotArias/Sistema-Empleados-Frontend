@@ -6,7 +6,7 @@
       <th>Nombre</th>
       <th>Apellido</th>
       <th>Email</th>
-      <th colspan="2">Acciones</th>
+      <th colspan="3">Acciones</th>
     </tr>
     </thead>
     <tbody>
@@ -14,8 +14,9 @@
         <td> {{empleado.nombre}} </td>
         <td> {{empleado.apellido}} </td>
         <td> {{empleado.email}} </td>
-        <td><button (click)="actualizarEmpleado(empleado.id)" class="btn btn-primary" btn-lg btn-block>Editar</button></td>
+        <td><button (click)="actualizarEmpleado(empleado.id)" class="btn btn-success" btn-lg btn-block>Editar</button></td>
         <td><button (click)="eliminarEmpleado(empleado.id)" class="btn btn-danger" btn-lg btn-block>Eliminar</button></td>
+        <td><button (click)="verDetallesDelEmpleado(empleado.id)" class="btn btn-info" btn-lg btn-block>Detalles</button></td>
       </tr>
     </tbody>
 </table>
